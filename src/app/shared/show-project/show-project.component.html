@@ -1,0 +1,16 @@
+<div id="wrapProject" class="animate__animated animate__flipInX">
+    <div id="img">
+        <img [src]="proyecto.imagen" alt="imagen proyecto">
+    </div>
+    <div id="desc">
+        <h3 class="txtStyle">{{proyecto.titulo}}</h3>
+        <p class="txtStyle">{{proyecto.descripcion}}</p>
+        <ul class="txtStyle">
+            <li *ngFor="let item of proyecto.tecno" class="txtStyle">{{item}}</li>
+        </ul>
+        <a id="enlaces" [href]="proyecto.url" target="_blank" class="txtStyle" #enlace>
+            Ir al proyecto
+            <span id="efectoa" #efectoa></span>
+        </a>
+    </div>
+</div>

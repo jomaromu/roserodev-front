@@ -1,0 +1,10 @@
+<div id="wrapWork" class="container">
+    <div id="wrapTextos" class="animate__animated" style="padding: 30px 0px; margin-bottom: 50px;">
+        <h1 id="tituloDetalles">En lo que hemos trabajado</h1>
+        <p class="txtDetalles">Esta es una muestra de los proyectos en los que hemos trabajado, esperamos sea de su
+            agrado</p>
+    </div>
+    <div id="projects">
+        <app-show-project [proyecto]="proyecto" *ngFor="let proyecto of proyectos"></app-show-project>
+    </div>
+</div>

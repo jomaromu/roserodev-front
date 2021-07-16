@@ -1,0 +1,32 @@
+<div id="wrapSkills" style="margin-bottom: 50px;">
+    <div id="divDetalles" class="animate__animated animate__fadeInLeft">
+        <h1 id="tituloDetalles">Nuestras habilidades</h1>
+        <div id="divTxtDetalles">
+            <p>Nuestro grupo está conformado por profesionales de diferentes áreas. Todos a su entera disposición para
+                brindarle el acompañamiento y la asesoría que usted necesite. </p>
+            <p>De igual forma contamos con personal capacitado en: desarrollo, diseño gráfico, análisis de sistemas,
+                entre otros.</p>
+            <p>Las tecnologías con la que hacemos realidad su idea cuentan con estándares altos de aplicabilidad, de
+                igual
+                manera seguimos patrones del ciclo de vida del software, esto con el fin de realizar un desarrollo
+                limpio, ordenado; dejando un precedente para su escalabilidad en el futuro.</p>
+        </div>
+    </div>
+    <div id="divKnops" class="animate__animated animate__fadeInRight">
+        <div>
+            <h3 style="color: rgb(208, 42, 45);">FrontEnd</h3>
+            <app-knop style="margin-bottom: 50px;" [color]="colorAngular" [porcentaje]="porAngular"></app-knop>
+
+            <h3 style="color: rgb(0, 151, 44);">BackEnd</h3>
+            <app-knop [color]="colorBackend" [porcentaje]="porBack" id="knop2"></app-knop>
+        </div>
+        <div>
+            <h3 style="color: rgb(78, 142, 247);">Móvil</h3>
+            <app-knop style="margin-bottom: 50px;" [color]="colorMovil" [porcentaje]="porMovil"></app-knop>
+
+            <h3 style="color: rgb(255, 101, 30);">Escritorio</h3>
+            <app-knop [color]="colorEscritorio" [porcentaje]="porDesk"></app-knop>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div id="wrapContact" style="margin-bottom: 50px;">
+
+    <div id="wrapTextos">
+        <h3>Contáctenos</h3>
+        <p>Construyamos juntos ese proyecto que tanto le apasiona. Encuentrenos en nuestras redes sociales, o escribanos
+            un mensaje.</p>
+        <p>Nuestros personal está disponible 24/7 para asistirle en lo que necesite.</p>
+    </div>
+
+    <div id="wrapFormMapa">
+        <div id="WrapFormulario" class="animate__animated animate__fadeInLeft">
+            <form [formGroup]="forma" (ngSubmit)="enviarMensaje($event)">
+                <!-- nombre -->
+                <div class="groupInputs">
+                    <span class="error text-danger" *ngIf="checkNombre === true">Cantidad incorrecta de carácteres</span>
+                    <input type="text" class="elementosForm" placeholder="Nombre..." formControlName="nombre"
+                        (keyup)="verificaNombre($event)">
+                    <span class="cantidadCaracteres">{{forma.controls.nombre.value.length}}/50</span>
+                </div>
+
+                <!-- correo -->
+                <div class="groupInputs">
+                    <span class="error text-danger" *ngIf="checkCorreo === true">Correo inválido</span>
+                    <input type="email" class="elementosForm" placeholder="Correo electrónico..."
+                        formControlName="correo" (keyup)="verificaCorreo($event)">
+                    <span class="cantidadCaracteres">{{forma.controls.correo.value.length}}</span>
+                </div>
+
+                <!-- mensaje -->
+                <div class="groupInputs">
+                    <span class="error text-danger" *ngIf="checkMensaje === true">Cantidad incorrecta de carácteres</span>
+                    <textarea name="" id="" cols="30" rows="10" class="elementosForm" placeholder="Mensaje..."
+                        formControlName="mensaje" (keyup)="verificaMensaje($event)"></textarea>
+                    <span class="cantidadCaracteres">{{forma.controls.mensaje.value.length}}/1000</span>
+                </div>
+
+                <button class="elementosForm" type="submit" #btnEnviar>
+                    Enviar mensaje
+                    <span id="efectoBoton" #spanEfecto></span>
+                </button>
+            </form>
+        </div>
+        <div id="wrapMapa" class="animate__animated animate__fadeInRight">
+        </div>
+    </div>
+</div>
+
+<code>
+    {{forma.status}}
+</code>

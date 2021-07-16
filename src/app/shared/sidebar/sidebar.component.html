@@ -1,0 +1,22 @@
+<div id="wrapSidebar" class="animate__animated" #wrapSidebar>
+
+    <!-- logo -->
+    <div id="divLogo">
+        <img src="../../../assets/img/logos/logo.png" alt="roserodev">
+    </div>
+
+    <!-- items del sidebar -->
+    <div id="divItems">
+        <ul id="ulItems">
+            <li *ngFor="let item of items" [routerLink]="item.enlace" class="items" (click)="ocultarSidebar($event)">{{item.nombre}}</li>
+        </ul>
+    </div>
+
+    <!-- redes sociales -->
+    <div id="socialMedia">
+        <a href="https://www.instagram.com/roserodev/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC4Hi7QupD1gzcdD8wja0Wuw" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/jroserodev.desarrollador" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
+</div>

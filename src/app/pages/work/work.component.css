@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+    div#projects {
+        grid-template-columns: 100% !important;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 440px) {
+    h1#tituloDetalles {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+#wrapWork {
+    /* border: 1px solid yellow; */
+    position: relative;
+    margin: 0px auto;
+    width: 90%;
+}
+
+#wrapWork>#projects {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tituloDetalles {
+    font-size: 3rem;
+    font-family: 'Chela One', cursive;
+    color: rgb(240, 35, 136);
+    width: 100%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.txtDetalles {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
+    line-height: 1.6;
+}
