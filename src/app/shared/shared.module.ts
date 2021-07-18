@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 
 // componentes
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { CurtainsComponent } from './curtains/curtains.component';
 import { KnopComponent } from './knop/knop.component';
 import { ChartsModule } from 'ng2-charts';
 import { ShowProjectComponent } from './show-project/show-project.component';
@@ -18,7 +17,6 @@ import {LayoutModule} from '@angular/cdk/layout';
 @NgModule({
   declarations: [
     SidebarComponent,
-    CurtainsComponent,
     KnopComponent,
     ShowProjectComponent
   ],
@@ -31,7 +29,6 @@ import {LayoutModule} from '@angular/cdk/layout';
   ],
   exports: [
     SidebarComponent,
-    CurtainsComponent,
     KnopComponent,
     ShowProjectComponent
   ]

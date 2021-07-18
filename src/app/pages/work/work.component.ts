@@ -21,35 +21,35 @@ export class WorkComponent implements OnInit {
 
     this.proyectos = [
       {
-        imagen: '../../../assets/img/think.jpg',
+        imagen: '../../../assets/img/think.webp',
         titulo: 'Think Translations',
         descripcion: 'Landing Page enfocada en la traducción, interpretación y transcripción de todo tipo de multimedia.',
         tecno: ['Angular', 'NodeJs', 'AWS'],
         url: 'https://thinktranslations.com/'
       },
       {
-        imagen: '../../../assets/img/sebalu.jpg',
+        imagen: '../../../assets/img/sebalu.webp',
         titulo: 'Sebalu Logistics',
         descripcion: 'Landig Page relacionado con la logística de productos farmaceuticos.',
         tecno: ['Angular', 'NodeJs', 'AWS'],
         url: 'https://sebalulogistics.com/'
       },
       {
-        imagen: '../../../assets/img/cbwyn.jpg',
+        imagen: '../../../assets/img/cbwyn.webp',
         titulo: 'CBWYN',
         descripcion: 'Aplicación web que conecta empresarios con emprendedores.',
         tecno: ['Angular', 'NodeJs', 'MongoDB', 'AWS', 'IONIC'],
         url: 'https://cbwyn.com/'
       },
       {
-        imagen: '../../../assets/img/fabio.jpg',
+        imagen: '../../../assets/img/fabio.webp',
         titulo: 'Abogado Fabio Villegas',
         descripcion: 'Página web semi-dinámica, de uso profesional enfocada al derecho y ciencias políticas.',
         tecno: ['Angular', 'NodeJs', 'MongoDB', 'AWS'],
         url: 'https://abogadofabiovillegasc.com/'
       },
       {
-        imagen: '../../../assets/img/royal.png',
+        imagen: '../../../assets/img/royal.webp',
         titulo: 'Royal World Logistics',
         descripcion: 'Landing page dedicada al servicio logístico y aduanas',
         tecno: ['Angular', 'NodeJs', 'AWS'],
